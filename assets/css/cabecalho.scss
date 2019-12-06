@@ -1,0 +1,27 @@
+.menu__lista {
+  display: flex;
+
+}
+
+.menu__item{
+  display: flex;
+  width: auto;
+  align-items:center;
+  padding-right: 2.5em ;
+  font-size: 1.2em;
+
+
+}
+
+.menu__link:hover,.ativo{
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0073e6;
+
+}
+
+.menu__link{
+  color:#333333;
+
+}
+
+

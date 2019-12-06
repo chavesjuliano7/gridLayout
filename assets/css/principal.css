@@ -1,0 +1,55 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app {
+  background: #f1f1f1;
+  display: -ms-grid;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+      grid-template-areas: "cabecalho" "conteudo" "populares" "rodape";
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 50px auto auto;
+      grid-template-rows: 50px auto auto;
+}
+
+.cabecalho {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cabecalho;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.conteudo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: conteudo;
+}
+
+.populares {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: populares;
+}
+
+.rodape {
+  margin: 2em 0 0 0;
+  padding: 1em;
+  text-align: center;
+  background: #fdfdfd;
+  color: #333333;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: rodape;
+  -webkit-filter: drop-shadow(0px -2px 5px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px -2px 5px rgba(0, 0, 0, 0.2));
+}
+/*# sourceMappingURL=principal.css.map */

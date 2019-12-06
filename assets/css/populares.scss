@@ -1,0 +1,137 @@
+.populares {
+    margin-top: .5em;
+    width: 100%;
+}
+
+
+.populares__conteudo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.populares__cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 1em 0;
+    padding-bottom: .5em;
+    border-bottom:1px solid #dddddd;
+}
+
+
+.populares__icone, .svg-inline--fa{
+    margin-right: .2em;
+}
+
+.populares__botao{
+
+    background-color:transparent;
+    border:none;
+
+}
+
+.populares__card{
+    width: calc(21% - 1em);
+    display: grid;
+    grid-template-areas:
+    'card-imagem'
+    'card-corpo';
+    grid-auto-columns: 100%;
+    grid-template-rows: 150px auto;
+    background-color: #fff;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+}
+
+.populares__card___imagem{
+    grid-area: card-imagem;
+    width: 100%;
+    height: 100%;
+}
+
+.populares__card___corpo{
+    grid-area: card-corpo;
+    padding: 1em;
+}
+
+
+
+.populares__card___cabecalho{
+    grid-area: card-corpo-cabecalho;
+    margin-bottom: 1em;
+
+}
+.populares__card___titulo{
+    font-size: 1.3em;
+    color:#303030;
+}
+
+.populares__card___data{
+    font-size: .8em;
+    color: #808080;
+    font-weight: 300;
+}
+
+.populares__card___descricao{
+    grid-area: card-corpo-descricao;
+    color:#333333;
+    line-height: 1.5em;
+    text-align: justify;
+
+}
+
+
+
+
+
+
+
+
+
+// .populares {
+
+
+
+// }
+
+// .populares__conteudo{
+//     display: grid;
+//     grid-template-columns: 20% 20% 20% 20% 20%;
+
+
+// }
+
+
+// .populares__card {
+//     background-color: #fdfdfd;
+//     display: grid;
+//     grid-template-areas:
+//     'card-imagem'
+//     'card-corpo';
+
+// }
+
+// .populares__card___imagem{
+//     grid-area: card-imagem;
+//     width: 100%;
+
+// }
+
+// .populares__card___corpo{
+//     grid-area: card-corpo;
+//     width: 100%;
+//     display: grid;
+//     grid-template-areas:
+//     'card-cabecalho'
+//     'card-descricao';
+// }
+
+// .populares__card___titulo{
+//     grid-area: card-cabecalho;
+//     font-size: 2em;
+
+// }
+// .populares__card___descricao{
+//     grid-area: card-descricao;
+// }

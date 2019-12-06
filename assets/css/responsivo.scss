@@ -1,0 +1,184 @@
+@media (max-width: 600px) {
+
+
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .destaques {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .destaques__secundario:nth-child(2),
+  .destaques__secundario:nth-child(3),
+  .destaques__secundario:nth-child(4),
+  .destaques__secundario:nth-child(5) {
+    display: none;
+
+  }
+
+  .destaques__principal {
+    background: url('../img/fortnite.jpg') top/ cover no-repeat;
+    flex-shrink: 1;
+    height: 50%;
+  }
+
+  .destaques__categorias {
+    font-size: 0.9em;
+    height: 50%;
+  }
+
+  .destaques__categorias___lista {
+    display: flex;
+  }
+
+  .destaques__categorias___item {
+    border: 1px solid lightgrey;
+    color: #333333;
+    width: 100%;
+    height: 25%;
+  }
+
+  .destaques__categorias___link {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+  }
+
+
+  // menu hamburguer com abertura
+  .menu {
+    position: fixed;
+    z-index: 1;
+
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: -90%;
+
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5em;
+
+    transition: left 0.3s ease-out;
+
+  }
+
+  .menu-ativo .menu {
+    left: 0;
+  }
+
+  .menu-ativo:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .menu__botao-abrir {
+    background-color: transparent;
+    border: none;
+
+    font-size: 1.5em;
+    padding-left: .5em;
+
+    display: block;
+    width: 2em;
+    height: 2em;
+
+  }
+
+  .menu__botao-fechar {
+    background-color: transparent;
+    border: none;
+
+    font-size: 2em;
+    padding-left: .5em;
+    margin-left: auto;
+
+    display: block;
+    width: 2em;
+    height: 2em;
+
+  }
+
+  .menu__lista {
+
+    display: block;
+    width: 100%;
+    padding-right: 20px;
+
+  }
+
+  // filter: drop-shadow(-2px 5px 3px red);
+  .menu__item {
+    border-bottom: 1px solid #646262;
+
+    padding: 2em 0 .5em 0;
+  }
+
+
+  .populares__conteudo{
+
+    width: 100%;
+
+
+  }
+
+
+  .populares__card{
+    border: 1px solid black;
+
+    width:100%;
+
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+  }
+
+  .populares__card___imagem{
+
+
+
+    width: 40%;
+    height: 80%;
+}
+
+.populares__card___corpo{
+  width: 50%;
+  height: 100px;
+    grid-area: card-corpo;
+    padding: 1em;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media not all and (max-width: 600px) {
+
+  .menu__botao-abrir,
+  .menu__botao-fechar {
+    display: none;
+  }
+
+
+}

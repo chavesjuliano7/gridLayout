@@ -1,0 +1,152 @@
+@media (max-width: 600px) {
+  .app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .destaques {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .destaques__secundario:nth-child(2),
+  .destaques__secundario:nth-child(3),
+  .destaques__secundario:nth-child(4),
+  .destaques__secundario:nth-child(5) {
+    display: none;
+  }
+  .destaques__principal {
+    background: url("../img/fortnite.jpg") top/cover no-repeat;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    height: 50%;
+  }
+  .destaques__categorias {
+    font-size: 0.9em;
+    height: 50%;
+  }
+  .destaques__categorias___lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .destaques__categorias___item {
+    border: 1px solid lightgrey;
+    color: #333333;
+    width: 100%;
+    height: 25%;
+  }
+  .destaques__categorias___link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+  }
+  .menu {
+    position: fixed;
+    z-index: 1;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: -90%;
+    background-color: #F1F1F1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 2.5em;
+    -webkit-transition: left 0.3s ease-out;
+    transition: left 0.3s ease-out;
+  }
+  .menu-ativo .menu {
+    left: 0;
+  }
+  .menu-ativo:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .menu__botao-abrir {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    padding-left: .5em;
+    display: block;
+    width: 2em;
+    height: 2em;
+  }
+  .menu__botao-fechar {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    padding-left: .5em;
+    margin-left: auto;
+    display: block;
+    width: 2em;
+    height: 2em;
+  }
+  .menu__lista {
+    display: block;
+    width: 100%;
+    padding-right: 20px;
+  }
+  .menu__item {
+    border-bottom: 1px solid #646262;
+    padding: 2em 0 .5em 0;
+  }
+  .populares {
+    margin: 0;
+  }
+}
+
+.populares__conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.populares__card {
+  width: calc(21% - 1em);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'card-imagem' 'card-corpo';
+  grid-auto-columns: 100%;
+  -ms-grid-rows: 150px auto;
+      grid-template-rows: 150px auto;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+@media not all and (max-width: 600px) {
+  .menu__botao-abrir,
+  .menu__botao-fechar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsivo.css.map */

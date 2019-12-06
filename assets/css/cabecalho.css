@@ -1,0 +1,27 @@
+.menu__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2.5em;
+  font-size: 1.2em;
+}
+
+.menu__link:hover, .ativo {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0073e6;
+}
+
+.menu__link {
+  color: #333333;
+}
+/*# sourceMappingURL=cabecalho.css.map */
